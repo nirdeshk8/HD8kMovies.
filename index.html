@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HD8Kmovies — Free Movies</title>
+    <meta name="description" content="HD8Kmovies — Stream and download movies." />
+    <meta name="author" content="HD8Kmovies" />
+
+    <meta property="og:title" content="HD8Kmovies" />
+    <meta property="og:description" content="Stream and download movies with HD8Kmovies." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/screenshot.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@HD8Kmovies" />
+    <meta name="twitter:image" content="/screenshot.svg" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Google Analytics (optional) set VITE_GA_ID in env to enable -->
+    <script>
+      (function(){
+        try {
+          var gaId = '%s';
+          if (gaId && gaId !== '%s') {
+            var s = document.createElement('script'); s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=' + gaId;
+            document.head.appendChild(s);
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);} 
+            gtag('js', new Date());
+            gtag('config', gaId);
+          }
+        } catch(e){}
+      })();
+    </script>
+    <link rel="icon" href="/hd8k-favicon.svg" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

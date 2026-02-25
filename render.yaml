@@ -1,0 +1,18 @@
+services:
+  - type: static_site
+    name: hd8kmovies
+    env: static
+    repo: https://github.com/nirdeshk8/HD8kMovies
+    branch: main
+    plan: free
+    buildCommand: npm ci && npm run build
+    staticPublishPath: dist
+services:
+  - type: static_site
+    name: HD8Kmovies
+    env: static
+    plan: free
+    repo: https://github.com/nirdeshk8/HD8kMovies
+    branch: main
+    buildCommand: npm ci && npm run build
+    publishPath: dist
